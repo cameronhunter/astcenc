@@ -16,5 +16,8 @@
   "workspaces": [
     "packages/astcenc",
     "packages/@astcenc/*"
-  ]
+  ],
+  "devDependencies": {
+    "lerna": "^6.4.1"
+  }
 }
