@@ -14,9 +14,15 @@
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
   "license": "Apache-2.0",
   "website": "https://developer.arm.com/graphics",
+  "dependencies": {
+    "resolve-bin": "^1.0.1"
+  },
   "optionalDependencies": {
     "@astcenc/darwin-arm64": "4.3.1-alpha",
     "@astcenc/darwin-x64": "4.3.1-alpha",
     "@astcenc/linux-x64": "4.3.1-alpha"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
   }
 }

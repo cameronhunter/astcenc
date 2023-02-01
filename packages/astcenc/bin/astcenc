@@ -1,41 +1,13 @@
-#!/usr/bin/env bash
+#!/usr/bin/env node
 
-case "${OSTYPE}" in
-  darwin*)
-    case "$(uname -m)" in
-      arm64)
-        echo "astcenc-darwin-arm64"
-        exit 0
-        ;;
+const pkgName = `${process.platform}-${process.arch}`;
 
-      x86_64)
-        echo "astcenc-darwin-x86"
-        exit 0
-        ;;
+let executablePath;
+try {
+  executablePath = require('resolve-bin').sync(`@astcenc/${pkgName}`, { executable: `astcenc-${pkgName}` });
+} catch {
+  console.error(`Could not find astcenc executable for ${process.platform} ${process.arch}`);
+  process.exit(1);
+}
 
-      *)
-        echo "Unsupported architecture" >&1
-        exit 1
-        ;;
-    esac
-    ;;
-
-  linux*)
-    case "$(uname -m)" in
-      x86_64)
-        echo "astcenc-darwin-x86"
-        exit 0
-        ;;
-
-      *)
-        echo "Unsupported architecture" >&1
-        exit 1
-        ;;
-    esac
-    ;;
-
-  *)
-    echo "Unsupported operating system" >&1
-    exit 1
-    ;;
-esac
+require('child_process').execFileSync(executablePath, process.argv.slice(2), { stdio: 'inherit' });
