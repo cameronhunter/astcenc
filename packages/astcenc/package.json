@@ -25,5 +25,8 @@
   "devDependencies": {
     "@types/node": "^18.11.18"
   },
-  "gitHead": "8e9f01554cdc336714c4fdb272ca67cb9d588309"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "gitHead": "195f77327123d7bd903d24ccef7227a6b2afdea7"
 }

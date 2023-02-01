@@ -16,7 +16,8 @@
     "arm64"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
-  "gitHead": "8e9f01554cdc336714c4fdb272ca67cb9d588309"
+  "gitHead": "195f77327123d7bd903d24ccef7227a6b2afdea7"
 }
