@@ -12,5 +12,9 @@
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
   "license": "Apache-2.0",
   "website": "https://developer.arm.com/graphics",
-  "packageManager": "pnpm@7.26.2"
+  "packageManager": "yarn@1.22.11",
+  "workspaces": [
+    "packages/astcenc",
+    "packages/@astcenc/*"
+  ]
 }
