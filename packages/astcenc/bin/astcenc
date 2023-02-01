@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+case "${OSTYPE}" in
+  darwin*)
+    case "$(uname -m)" in
+      arm64)
+        echo "astcenc-darwin-arm64"
+        exit 0
+        ;;
+
+      x86_64)
+        echo "astcenc-darwin-x86"
+        exit 0
+        ;;
+
+      *)
+        echo "Unsupported architecture" >&1
+        exit 1
+        ;;
+    esac
+    ;;
+
+  linux*)
+    case "$(uname -m)" in
+      x86_64)
+        echo "astcenc-darwin-x86"
+        exit 0
+        ;;
+
+      *)
+        echo "Unsupported architecture" >&1
+        exit 1
+        ;;
+    esac
+    ;;
+
+  *)
+    echo "Unsupported operating system" >&1
+    exit 1
+    ;;
+esac

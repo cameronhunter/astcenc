@@ -1,9 +1,0 @@
-{
-  "extends": "@tsconfig/node-lts-strictest",
-  "files": [],
-  "references": [
-    {
-      "path": "./packages/astcenc"
-    }
-  ]
-}
