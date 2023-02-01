@@ -10,4 +10,8 @@ try {
   process.exit(1);
 }
 
-require('child_process').execFileSync(executablePath, process.argv.slice(2), { stdio: 'inherit' });
+const { status } = require('child_process').spawnSync(executablePath, process.argv.slice(2), { stdio: 'inherit' });
+
+if (status !== null) {
+  process.exit(status);
+}
