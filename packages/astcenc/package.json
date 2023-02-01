@@ -13,7 +13,7 @@
   ],
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
   "license": "Apache-2.0",
-  "website": "https://developer.arm.com/graphics",
+  "homepage": "https://developer.arm.com/graphics",
   "dependencies": {
     "resolve-bin": "^1.0.1"
   },
@@ -27,6 +27,10 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cameronhunter/astcenc.git"
   },
   "gitHead": "195f77327123d7bd903d24ccef7227a6b2afdea7"
 }
