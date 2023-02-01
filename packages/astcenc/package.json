@@ -2,7 +2,9 @@
   "name": "astcenc",
   "version": "4.3.1-alpha",
   "description": "A command-line tool for compressing and decompressing images using the ASTC texture compression standard.",
-  "bin": "./bin/astcenc",
+  "bin": {
+    "astcenc": "./bin/astcenc"
+  },
   "keywords": [
     "compression",
     "image-compression",
@@ -15,7 +17,6 @@
   "optionalDependencies": {
     "@astcenc/darwin-arm64": "4.3.1-alpha",
     "@astcenc/darwin-x64": "4.3.1-alpha",
-    "@astcenc/linux-x64": "4.3.1-alpha",
-    "@astcenc/win32-x64": "4.3.1-alpha"
+    "@astcenc/linux-x64": "4.3.1-alpha"
   }
 }
