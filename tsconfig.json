@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node-lts-strictest",
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/astcenc"
+    },
+    {
+      "path": "./packages/@astcenc/darwin-x64"
+    },
+    {
+      "path": "./packages/@astcenc/linux-x64"
+    }
+  ]
+}

@@ -6,6 +6,12 @@
   "license": "Apache-2.0",
   "website": "https://developer.arm.com/graphics",
   "preferUnplugged": true,
+  "bin": {
+    "astcenc-darwin-x64-avx2": "./bin/astcenc-avx2",
+    "astcenc-darwin-x64-sse2": "./bin/astcenc-sse2",
+    "astcenc-darwin-x64-sse4.1": "./bin/astcenc-sse4.1",
+    "astcenc-darwin-x64": "./build/main.js"
+  },
   "os": [
     "darwin"
   ],

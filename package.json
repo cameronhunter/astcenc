@@ -12,5 +12,12 @@
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
   "license": "Apache-2.0",
   "website": "https://developer.arm.com/graphics",
-  "packageManager": "pnpm@7.26.2"
+  "packageManager": "pnpm@7.26.2",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts-strictest": "^18.12.1",
+    "typescript": "^4.9.5"
+  }
 }

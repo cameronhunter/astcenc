@@ -6,6 +6,9 @@
   "license": "Apache-2.0",
   "website": "https://developer.arm.com/graphics",
   "preferUnplugged": true,
+  "bin": {
+    "astcenc-darwin-arm64": "./bin/astcenc-neon"
+  },
   "os": [
     "darwin"
   ],

@@ -3,7 +3,12 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
+    specifiers:
+      '@tsconfig/node-lts-strictest': ^18.12.1
+      typescript: ^4.9.5
+    devDependencies:
+      '@tsconfig/node-lts-strictest': 18.12.1
+      typescript: 4.9.5
 
   packages/@astcenc/darwin-arm64:
     specifiers: {}
@@ -28,3 +33,15 @@ importers:
       '@astcenc/darwin-x64': link:../@astcenc/darwin-x64
       '@astcenc/linux-x64': link:../@astcenc/linux-x64
       '@astcenc/win32-x64': link:../@astcenc/win32-x64
+
+packages:
+
+  /@tsconfig/node-lts-strictest/18.12.1:
+    resolution: {integrity: sha512-pn6cefRFlBVSEo5lO82bJnGmaptr90Wu8zCROkMUYXEz0f4AgCD65Guhq4u3PIuIlsYImaOmdoiHajx1gVTiQw==}
+    dev: true
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
