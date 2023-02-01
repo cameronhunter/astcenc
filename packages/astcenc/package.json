@@ -1,0 +1,21 @@
+{
+  "name": "astcenc",
+  "version": "4.3.1-alpha",
+  "description": "A command-line tool for compressing and decompressing images using the ASTC texture compression standard.",
+  "bin": "build/main.js",
+  "keywords": [
+    "compression",
+    "image-compression",
+    "astc",
+    "astcenc"
+  ],
+  "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "license": "Apache-2.0",
+  "website": "https://developer.arm.com/graphics",
+  "optionalDependencies": {
+    "@astcenc/darwin-arm64": "4.3.1-alpha",
+    "@astcenc/darwin-x64": "4.3.1-alpha",
+    "@astcenc/linux-x64": "4.3.1-alpha",
+    "@astcenc/win32-x64": "4.3.1-alpha"
+  }
+}

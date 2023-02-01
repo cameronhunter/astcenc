@@ -1,0 +1,30 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  packages/@astcenc/darwin-arm64:
+    specifiers: {}
+
+  packages/@astcenc/darwin-x64:
+    specifiers: {}
+
+  packages/@astcenc/linux-x64:
+    specifiers: {}
+
+  packages/@astcenc/win32-x64:
+    specifiers: {}
+
+  packages/astcenc:
+    specifiers:
+      '@astcenc/darwin-arm64': 4.3.1-alpha
+      '@astcenc/darwin-x64': 4.3.1-alpha
+      '@astcenc/linux-x64': 4.3.1-alpha
+      '@astcenc/win32-x64': 4.3.1-alpha
+    optionalDependencies:
+      '@astcenc/darwin-arm64': link:../@astcenc/darwin-arm64
+      '@astcenc/darwin-x64': link:../@astcenc/darwin-x64
+      '@astcenc/linux-x64': link:../@astcenc/linux-x64
+      '@astcenc/win32-x64': link:../@astcenc/win32-x64

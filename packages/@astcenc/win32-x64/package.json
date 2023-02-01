@@ -1,0 +1,15 @@
+{
+  "name": "@astcenc/win32-x64",
+  "version": "4.3.1-alpha",
+  "description": "The Windows 64-bit binary for the ASTC texture compression standard.",
+  "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "license": "Apache-2.0",
+  "website": "https://developer.arm.com/graphics",
+  "preferUnplugged": true,
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ]
+}
