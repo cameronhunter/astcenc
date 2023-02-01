@@ -14,10 +14,12 @@
   "website": "https://developer.arm.com/graphics",
   "packageManager": "pnpm@7.26.2",
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "devDependencies": {
     "@tsconfig/node-lts-strictest": "^18.12.1",
+    "@types/node": "^18.11.18",
     "typescript": "^4.9.5"
   }
 }

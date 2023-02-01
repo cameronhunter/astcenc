@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+EXTENDED_CPU_FEATURES=$(grep flags /proc/cpu)
+
+DIRNAME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+function supports_features {
+  for feature in ${@}; do
+    if [[ "${EXTENDED_CPU_FEATURES}" != *"${feature}"* ]]; then
+      return 1
+    fi
+  done
+
+  return 0
+}
+
+if supports_features avx sse4_2 popcnt f16c; then
+  "${DIRNAME}/astcenc-avx2" ${@}
+elif supports_features sse4_1 popcnt; then
+  "${DIRNAME}/astcenc-sse4.1" ${@}
+else
+  "${DIRNAME}/astcenc-sse2" ${@}
+fi
