@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-EXTENDED_CPU_FEATURES=$(grep flags /proc/cpu)
+EXTENDED_CPU_FEATURES=$(grep flags /proc/cpuinfo)
 
 DIRNAME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
