@@ -1,0 +1,3 @@
+packages:
+  - 'packages/astcenc'
+  - 'packages/@astcenc/*'
