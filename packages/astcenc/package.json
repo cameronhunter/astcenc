@@ -3,8 +3,9 @@
   "version": "4.3.1-5",
   "description": "A command-line tool for compressing and decompressing images using the ASTC texture compression standard.",
   "bin": {
-    "astcenc": "./bin/astcenc"
+    "astcenc": "./src/main.js"
   },
+  "main": "./src/lib.js",
   "keywords": [
     "compression",
     "image-compression",
