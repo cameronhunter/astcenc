@@ -1,6 +1,6 @@
 {
   "name": "astcenc",
-  "version": "4.3.1-6",
+  "version": "4.3.1-7",
   "description": "A command-line tool for compressing and decompressing images using the ASTC texture compression standard.",
   "bin": {
     "astcenc": "./src/main.js"
