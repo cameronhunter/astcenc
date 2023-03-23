@@ -6,6 +6,7 @@
     "astcenc": "./src/main.js"
   },
   "main": "./src/lib.js",
+  "types": "./src/types.d.ts",
   "keywords": [
     "compression",
     "image-compression",
